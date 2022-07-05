@@ -16,8 +16,9 @@
         </label>
       </div>
       <div class="form-floating col-9 col-lg-10">
-        <input class="form-control" id="currency-converter-amount" placeholder="Amount" required>
-        <label class="form-label" ng-label="amount" name="amount" for="currency-converter-amount">
+        <input class="form-control" ng-model="$ctrl.amount" id="currency-converter-amount" placeholder="Amount"
+          required>
+        <label class="form-label" name="amount" for="currency-converter-amount">
           Amount ({{$ctrl.from}})
         </label>
       </div>
@@ -36,8 +37,8 @@
         </label>
       </div>
       <div class="form-floating col-9 col-lg-10">
-        <input class="form-select" ng-model="$ctrl.result" name="result" id="currency-converter-result"
-          placeholder="Result ({{$ctrl.to}})" readonly>
+        <input class="form-control" ng-model="$ctrl.result" name="result" id="currency-converter-result"
+          placeholder="Result" readonly>
 
         <label class="form-label" for="currency-converter-result">
           Result ({{$ctrl.to}})
