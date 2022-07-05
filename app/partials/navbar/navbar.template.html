@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#!/">
+      ACE
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
+      aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-content">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item" ng-repeat="navItem in $ctrl.navbarItems">
+          <a href="{{navItem.url}}" class="nav-link">
+            {{navItem.displayText}}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</nav>
